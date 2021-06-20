@@ -1,0 +1,40 @@
+site_name: dython
+site_description: A set of data-analysis tools for Python 3.x
+site_long_description: Dython is a set of data-analysis tools written in Python 3.x, which can let you get more insights about your data. Dython was designed with analysis usage in mind - meaning ease-of-use, functionality and readability are the core values of this library.
+site_author: Shaked Zychlinski
+site_url: http://shakedzy.xyz/dython/
+repo_name: shakedzy/dython
+repo_url: https://github.com/shakedzy/dython
+copyright: Copyright &copy; Shaked Zychlinski
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    primary: light blue
+    accent: blue
+  logo: images/favicon.png
+  favicon: images/favicon.png
+nav:
+  - Home: 'index.md'
+  - Getting Started:
+    - Installation: 'getting_started/installation.md'
+    - Examples: 'getting_started/examples.md'
+  - Modules:
+    - data_utils: 'modules/data_utils.md'
+    - nominal: 'modules/nominal.md'
+    - model_utils: 'modules/model_utils.md'
+    - sampling: 'modules/sampling.md'
+  - Related Blogosts: 'related_blogposts.md'
+google_analytics:
+  - UA-141245946-2
+  - auto
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - pymdownx.arithmatex
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+plugins:
+  - search
